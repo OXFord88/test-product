@@ -1,0 +1,105 @@
+@import "normalize.css";
+html,
+body {
+    height: 100%;
+    background-color: #F5F5F5;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "microsoft yahei";
+    font-size: 16px;
+}
+li {
+    list-style: none;
+}
+#app,
+.container,
+.content-container {
+    height: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 240px;
+    height: 100%;
+    overflow-y: auto;
+    background: #2d323e;
+}
+
+.header {
+    height: 64px;
+    line-height: 64px;
+}
+
+.content-container {
+    position: relative;
+    /*margin-left: 240px;*/
+    display: flex;
+    flex-direction: column;
+}
+i {
+    color: #999;
+    font-style: normal;
+    margin-left: 4px;
+}
+.el-table {
+    margin-top: 30px;
+}
+
+.content {
+    background-color: #fff;
+    margin: 15px;
+    padding: 15px;
+    flex: 1;
+}
+.el-table .cell, .el-table th > div {
+    padding: 0;
+    text-align: center;
+}
+.alert-box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+}
+.alert-box .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .6;
+}
+.alert-box .box-content {
+    width: 600px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    margin-left: -300px;
+}
+.flex-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.flex-list span {
+    width: 80px;
+    margin-right: 10px;
+    text-align: right;
+}
+.flex-list .el-input, .flex-list .el-input__inner {
+    width: 200px;
+}
